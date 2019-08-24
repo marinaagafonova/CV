@@ -1,0 +1,40 @@
+﻿@model IEnumerable<UserStore.Models.DiscountCard.DiscountCardViewModel>
+
+@{
+    ViewBag.Title = "Скидочные карты";
+}
+
+<h2>Скидочные карты</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Code)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.DiscountPercent)
+        </th>*@
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Code)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.DiscountPercent)
+        </td>*@
+        <td>
+            @Html.ActionLink("Редактировать", "Edit", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

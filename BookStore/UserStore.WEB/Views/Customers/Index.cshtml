@@ -1,0 +1,56 @@
+﻿@model IEnumerable<UserStore.Models.Customer.CustomerViewModel>
+
+@{
+    ViewBag.Title = "Покупатели";
+}
+
+<h2>Покупатели</h2>
+
+<p>
+    @Html.ActionLink("Добавить", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiscountCardId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiscountCardCode)
+        </th>       
+		<th>
+            @Html.DisplayNameFor(model => model.OrdersCount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiscountCardId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DiscountCardCode)
+        </td>   
+		<td>
+            @Html.DisplayFor(modelItem => item.OrdersCount)
+        </td>
+        <td>
+            @Html.ActionLink("Редактировать", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Удалить", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CG_Lab4_3DFunction Graphs", "CG_Lab4_3DFunction Graphs\CG_Lab4_3DFunction Graphs.csproj", "{76231D69-5EAD-4766-BFEA-2FAAA078A73B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DFunctionBL", "3DFunctionBL\3DFunctionBL.csproj", "{4C45A9C3-F87E-44EE-96BA-AE7CEA2E4492}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76231D69-5EAD-4766-BFEA-2FAAA078A73B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76231D69-5EAD-4766-BFEA-2FAAA078A73B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76231D69-5EAD-4766-BFEA-2FAAA078A73B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76231D69-5EAD-4766-BFEA-2FAAA078A73B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C45A9C3-F87E-44EE-96BA-AE7CEA2E4492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C45A9C3-F87E-44EE-96BA-AE7CEA2E4492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C45A9C3-F87E-44EE-96BA-AE7CEA2E4492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C45A9C3-F87E-44EE-96BA-AE7CEA2E4492}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A9A2E35-0F7C-494D-B952-5C23A8A789B2}
+	EndGlobalSection
+EndGlobal
